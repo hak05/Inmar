@@ -1,0 +1,2927 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.18.1018.1932                               -->
+<workbook original-version='18.1' source-build='2018.3.0 (20183.18.1018.1932)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='consumer_incentive_final' inline='true' name='federated.1vgyk6u1p1swjz111ji220asi1wb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='consumer_incentive_final' name='textscan.07pskgu1ns6t0x1bks01n0wxme2m'>
+            <connection class='textscan' directory='C:/Users/hkhatri/Desktop' filename='consumer_incentive_final.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.07pskgu1ns6t0x1bks01n0wxme2m' name='consumer_incentive_final.csv' table='[consumer_incentive_final#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='consumer_incentive_id' ordinal='0' />
+            <column datatype='integer' name='consumer_id_id' ordinal='1' />
+            <column datatype='integer' name='incentive_id' ordinal='2' />
+            <column datatype='integer' name='status' ordinal='3' />
+            <column datatype='integer' name='value' ordinal='4' />
+            <column datatype='datetime' name='selection_date' ordinal='5' />
+            <column datatype='integer' name='redeem_count' ordinal='6' />
+            <column datatype='datetime' name='redeem_date' ordinal='7' />
+            <column datatype='integer' name='retailer_id' ordinal='8' />
+            <column datatype='integer' name='redeemer_consumer_id_id' ordinal='9' />
+            <column datatype='integer' name='media_property_id' ordinal='10' />
+            <column datatype='datetime' name='clip_timestamp' ordinal='11' />
+            <column datatype='string' name='updated_timestamp' ordinal='12' />
+            <column datatype='integer' name='clientid' ordinal='13' />
+            <column datatype='integer' name='transyear' ordinal='14' />
+            <column datatype='integer' name='transmonth' ordinal='15' />
+            <column datatype='string' name='description' ordinal='16' />
+            <column datatype='integer' name='retailer_id_consumer' ordinal='17' />
+            <column datatype='string' name='username' ordinal='18' />
+            <column datatype='datetime' name='date_joined' ordinal='19' />
+            <column datatype='date' name='offer_Redeem_date' ordinal='20' />
+            <column datatype='date' name='reg_date' ordinal='21' />
+            <column datatype='integer' name='Flag' ordinal='22' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>consumer_incentive_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[consumer_incentive_id]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>consumer_incentive_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>consumer_id_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[consumer_id_id]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>consumer_id_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incentive_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[incentive_id]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>incentive_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[status]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>status</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>value</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[value]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>value</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>selection_date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[selection_date]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>selection_date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>redeem_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[redeem_count]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>redeem_count</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>redeem_date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[redeem_date]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>redeem_date</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retailer_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[retailer_id]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>retailer_id</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>redeemer_consumer_id_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[redeemer_consumer_id_id]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>redeemer_consumer_id_id</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>media_property_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[media_property_id]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>media_property_id</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clip_timestamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[clip_timestamp]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>clip_timestamp</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updated_timestamp</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[updated_timestamp]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>updated_timestamp</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clientid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clientid]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>clientid</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transyear</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[transyear]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>transyear</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transmonth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[transmonth]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>transmonth</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retailer_id_consumer</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[retailer_id_consumer]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>retailer_id_consumer</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>username</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[username]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>username</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_joined</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[date_joined]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>date_joined</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offer_Redeem_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[offer_Redeem_date]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>offer_Redeem_date</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reg_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[reg_date]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>reg_date</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Flag]</local-name>
+            <parent-name>[consumer_incentive_final.csv]</parent-name>
+            <remote-alias>Flag</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Clientid' datatype='integer' name='[clientid]' role='measure' type='quantitative' />
+      <column caption='Clip Timestamp' datatype='datetime' name='[clip_timestamp]' role='dimension' type='ordinal' />
+      <column caption='Consumer Id Id' datatype='integer' name='[consumer_id_id]' role='dimension' type='ordinal' />
+      <column caption='Consumer Incentive Id' datatype='integer' name='[consumer_incentive_id]' role='dimension' type='ordinal' />
+      <column caption='Date Joined' datatype='datetime' name='[date_joined]' role='dimension' type='ordinal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Incentive Id' datatype='integer' name='[incentive_id]' role='dimension' type='ordinal' />
+      <column caption='Media Property Id' datatype='integer' name='[media_property_id]' role='dimension' type='ordinal' />
+      <column datatype='date' name='[offer_Redeem_date]' role='dimension' type='ordinal' />
+      <column caption='Redeem Count' datatype='integer' name='[redeem_count]' role='measure' type='quantitative' />
+      <column caption='Redeem Date' datatype='datetime' name='[redeem_date]' role='dimension' type='ordinal' />
+      <column caption='Redeemer Consumer Id Id' datatype='integer' name='[redeemer_consumer_id_id]' role='dimension' type='ordinal' />
+      <column datatype='date' name='[reg_date]' role='dimension' type='ordinal' />
+      <column caption='Retailer Id' datatype='integer' name='[retailer_id]' role='dimension' type='ordinal' />
+      <column caption='Retailer Id Consumer' datatype='integer' name='[retailer_id_consumer]' role='measure' type='quantitative' />
+      <column caption='Selection Date' datatype='datetime' name='[selection_date]' role='dimension' type='ordinal' />
+      <column caption='Status' datatype='integer' name='[status]' role='measure' type='quantitative' />
+      <column caption='Transmonth' datatype='integer' name='[transmonth]' role='measure' type='quantitative' />
+      <column caption='Transyear' datatype='integer' name='[transyear]' role='measure' type='quantitative' />
+      <column caption='Username' datatype='string' name='[username]' role='dimension' type='nominal' />
+      <column caption='Value' datatype='integer' name='[value]' role='measure' type='quantitative' />
+      <column-instance column='[redeem_count]' derivation='Sum' name='[sum:redeem_count:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[offer_Redeem_date]' derivation='Day-Trunc' name='[tdy:offer_Redeem_date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[offer_Redeem_date]' derivation='Month-Trunc' name='[tmn:offer_Redeem_date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[reg_date]' derivation='Month-Trunc' name='[tmn:reg_date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[offer_Redeem_date]' derivation='Week-Trunc' name='[twk:offer_Redeem_date:ok]' pivot='key' type='ordinal' />
+      <group hidden='true' name='[Inclusions (MONTH(offer_Redeem_date),MONTH(reg_date))]' name-style='unqualified' user:auto-column='include'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tmn:offer_Redeem_date:ok]' />
+          <groupfilter function='level-members' level='[tmn:reg_date:ok]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.54023' measure-ordering='alphabetic' measure-percentage='0.45977' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[twk:offer_Redeem_date:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>#2017-02-26 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-07-16 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-09-01 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-12-03 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-05-21 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-10-08 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2018-02-25 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-05-01 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-06-18 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-11-05 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2018-03-25 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-03-26 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-08-13 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-12-31 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2018-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-03-05 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-07-23 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-10-01 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-12-10 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-06-01 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-06-25 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-11-12 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-01-29 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-05-07 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-09-24 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2018-02-11 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-02-01 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-05-28 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-10-15 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2018-03-04 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-01-15 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-04-23 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-09-10 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2018-01-28 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-02-12 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-07-01 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-07-02 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2017-04-02 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2017-08-20 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2018-01-07 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2018-02-01 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2017-04-09 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2017-08-27 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2018-01-14 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2018-03-01 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-01-22 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-04-30 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-09-17 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2018-02-04 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-02-05 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-05-14 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-11-19 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2018-02-18 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-03-12 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-07-30 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-11-01 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-12-17 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-02-19 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-07-09 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-08-01 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-11-26 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-03-01 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-06-04 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-10-22 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2018-03-11 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-01-08 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-04-16 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-09-03 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2018-01-21 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-03-19 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-08-06 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-12-01 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-12-24 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-04-01 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-06-11 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-10-29 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2018-03-18 00:00:00#</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[tdy:offer_Redeem_date:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>#2017-01-12 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-02-02 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-02-22 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-02-26 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-04-03 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-05-03 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-05-13 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-06-02 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-07-12 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-07-16 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-08-02 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-08-22 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-09-01 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-09-11 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-10-19 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-11-10 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-11-30 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-12-03 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2017-12-20 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2018-01-10 00:00:00#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#2018-03-09 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-01-03 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-02-14 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-03-06 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-04-08 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-04-15 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-05-21 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-05-25 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-06-14 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-07-04 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-07-24 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-08-14 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-09-23 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-10-08 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-10-13 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-11-02 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-11-22 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-12-12 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2018-01-22 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2018-02-22 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2018-02-25 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-01-25 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-02-17 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-03-10 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-03-30 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-04-19 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-05-01 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-05-09 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-06-18 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-06-22 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-07-08 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-07-29 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-08-18 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-09-07 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-10-17 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-11-05 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-11-06 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-12-07 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-12-16 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2018-01-06 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2018-03-03 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2018-03-25 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-01-17 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-02-06 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-03-14 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-03-18 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-03-26 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-04-27 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-05-17 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-06-06 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-06-26 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-08-11 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-08-13 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-08-26 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-09-15 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-10-05 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-10-25 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-12-04 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2017-12-31 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2018-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2018-01-03 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2018-01-26 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2018-02-07 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-01-14 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-02-03 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-02-23 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-03-05 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-04-04 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-04-24 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-05-27 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-06-03 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-06-23 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-07-23 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-08-03 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-08-23 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-09-12 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-10-01 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-10-02 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-11-11 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-12-08 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-12-10 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-12-21 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2018-01-11 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2018-02-02 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-01-09 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-01-30 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-03-11 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-03-31 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-04-20 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-05-10 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-05-30 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-06-01 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-06-25 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-07-17 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-08-09 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-08-19 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-09-08 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-10-18 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-11-07 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-11-12 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-11-27 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2018-01-02 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2018-01-25 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2018-03-30 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-01-23 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-01-29 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-02-21 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-03-04 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-03-24 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-04-13 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-05-07 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-05-23 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-06-12 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-07-15 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-07-22 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-08-12 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-09-21 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-09-24 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-10-11 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-10-31 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2017-11-20 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2018-01-04 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2018-01-20 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2018-02-11 00:00:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#2018-03-26 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-01-05 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-02-01 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-02-15 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-03-07 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-03-27 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-05-02 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-05-06 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-05-28 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-06-15 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-07-05 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-07-25 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-08-15 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-09-28 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-10-14 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-10-15 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-11-03 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-11-23 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-12-13 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2018-01-23 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2018-02-23 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2018-03-04 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-01-15 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-01-21 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-02-10 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-03-02 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-03-22 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-04-23 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-05-05 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-05-29 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-06-10 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-06-30 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-07-20 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-08-30 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-09-10 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-09-19 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-10-09 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-11-13 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-11-18 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2017-12-29 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2018-01-18 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2018-01-28 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2018-02-16 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-01-10 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-01-31 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-02-12 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-03-17 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-04-10 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-04-21 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-05-11 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-05-31 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-07-01 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-07-02 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-07-10 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-07-31 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-09-04 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-09-09 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-09-29 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-11-08 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-11-28 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-12-18 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2018-01-08 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2018-03-08 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2017-01-18 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2017-02-07 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2017-02-27 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2017-04-02 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2017-04-07 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2017-04-28 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2017-05-18 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2017-06-07 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2017-06-27 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2017-08-07 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2017-08-20 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2017-09-05 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2017-09-16 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2017-10-06 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2017-10-26 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2017-12-05 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2017-12-26 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2018-01-07 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2018-01-15 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2018-02-01 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2018-02-09 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2017-01-19 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2017-02-08 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2017-02-28 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2017-03-20 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2017-04-09 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2017-04-29 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2017-05-19 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2017-06-08 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2017-06-28 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2017-07-18 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2017-08-27 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2017-08-28 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2017-09-27 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2017-10-07 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2017-10-27 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2017-11-16 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2017-12-27 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2018-01-14 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2018-01-16 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2018-03-01 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2018-03-14 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-01-22 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-01-27 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-02-11 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-03-03 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-03-23 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-04-12 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-04-30 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-05-22 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-06-21 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-07-14 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-07-21 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-08-31 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-09-17 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-09-20 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-10-10 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-10-30 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-12-06 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2017-12-30 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2018-01-19 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2018-02-04 00:00:00#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#2018-02-17 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-01-24 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-02-05 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-02-13 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-03-16 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-03-25 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-04-14 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-05-14 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-05-24 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-06-13 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-07-03 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-08-08 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-09-02 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-09-22 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-10-12 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-11-14 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-11-19 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-11-21 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2017-12-11 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2018-01-27 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2018-02-18 00:00:00#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#2018-02-19 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-01-26 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-02-04 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-02-24 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-03-12 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-04-05 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-04-25 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-05-15 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-06-20 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-06-24 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-07-30 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-08-04 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-08-24 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-09-13 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-10-03 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-10-23 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-11-01 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-12-02 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-12-17 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-12-22 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2018-01-12 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2018-02-03 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-01-11 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-02-18 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-02-19 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-03-13 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-04-11 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-04-22 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-05-12 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-06-19 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-07-09 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-07-11 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-08-01 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-08-10 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-08-21 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-09-26 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-09-30 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-11-09 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-11-26 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-11-29 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-12-19 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2018-01-09 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2018-01-29 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-01-06 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-02-16 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-03-01 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-03-08 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-03-28 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-04-17 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-05-26 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-06-04 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-06-16 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-07-06 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-07-27 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-08-16 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-09-25 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-10-21 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-10-22 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-11-04 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-11-24 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-12-14 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2018-01-24 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2018-02-24 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2018-03-11 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-01-08 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-01-20 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-02-09 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-03-15 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-03-21 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-04-16 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-05-04 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-05-20 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-06-09 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-06-29 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-07-19 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-08-29 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-09-03 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-09-18 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-10-20 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-10-28 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-11-17 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2017-12-28 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2018-01-17 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2018-01-21 00:00:00#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#2018-02-15 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-01-16 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-02-20 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-02-25 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-03-19 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-04-06 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-04-26 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-05-16 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-06-05 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-07-13 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-08-05 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-08-06 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-08-25 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-09-14 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-10-04 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-10-24 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-12-01 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-12-09 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-12-23 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-12-24 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2018-01-13 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2018-03-12 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-01-07 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-01-28 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-03-09 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-03-29 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-04-01 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-04-18 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-05-08 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-06-11 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-06-17 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-07-07 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-07-28 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-08-17 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-09-06 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-10-16 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-10-29 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-11-15 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-11-25 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-12-15 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2018-01-05 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2018-03-18 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2018-03-27 00:00:00#</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[tmn:offer_Redeem_date:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>#2017-09-01 00:00:00#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#2017-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2017-05-01 00:00:00#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#2018-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#2017-10-01 00:00:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#2017-06-01 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-02-01 00:00:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#2017-07-01 00:00:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#2018-02-01 00:00:00#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#2018-03-01 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-11-01 00:00:00#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#2017-08-01 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-03-01 00:00:00#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#2017-12-01 00:00:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#2017-04-01 00:00:00#</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[sum:redeem_count:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>69</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>107</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>153</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>238</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>643</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>97</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>129</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>8136</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>57</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>101</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>138</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>348</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>1023</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>29</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>74</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>113</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>167</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>863</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>70</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>108</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>157</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>341</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>738</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>60</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>102</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>141</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>364</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>47</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>90</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>126</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>25</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>49</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>50</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>98</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>131</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>906</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>42</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>87</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>120</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>203</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>65</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>103</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>147</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>549</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>1133</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>31</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>75</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>115</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>177</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>958</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>34</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>82</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>116</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>183</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>1068</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>43</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>89</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>122</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>212</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>808</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>48</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>91</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>128</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>71</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>109</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>162</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>825</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>1555</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>7961</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>66</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>104</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>149</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>209</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>578</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>53</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>99</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>134</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>135</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>173</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>912</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>8134</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>41</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>84</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>117</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>133</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>730</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>19</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>73</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>112</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>165</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>827</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>55</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>100</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>130</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>137</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>200</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[tmn:reg_date:ok]' palette='purple_pink_gray_10_0' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>#2017-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#7c7270'>
+              <bucket>#2017-12-01 00:00:00#</bucket>
+            </map>
+            <map to='#8074a8'>
+              <bucket>#2017-04-01 00:00:00#</bucket>
+            </map>
+            <map to='#9b93c9'>
+              <bucket>#2017-10-01 00:00:00#</bucket>
+            </map>
+            <map to='#9c9290'>
+              <bucket>#2017-08-01 00:00:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#2017-02-01 00:00:00#</bucket>
+            </map>
+            <map to='#c46487'>
+              <bucket>#2017-06-01 00:00:00#</bucket>
+            </map>
+            <map to='#c5bfbe'>
+              <bucket>#2017-09-01 00:00:00#</bucket>
+            </map>
+            <map to='#c6c1f0'>
+              <bucket>#2017-05-01 00:00:00#</bucket>
+            </map>
+            <map to='#ddb5d5'>
+              <bucket>#2017-11-01 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2017-03-01 00:00:00#</bucket>
+            </map>
+            <map to='#f498b6'>
+              <bucket>#2018-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#ffbed1'>
+              <bucket>#2017-07-01 00:00:00#</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Stacked Chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='consumer_incentive_final' name='federated.1vgyk6u1p1swjz111ji220asi1wb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vgyk6u1p1swjz111ji220asi1wb'>
+            <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+            <column-instance column='[offer_Redeem_date]' derivation='MY' name='[my:offer_Redeem_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[reg_date]' derivation='MY' name='[my:reg_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[description]' derivation='None' name='[none:description:nk]' pivot='key' type='nominal' />
+            <column datatype='date' name='[offer_Redeem_date]' role='dimension' type='ordinal' />
+            <column caption='Redeem Count' datatype='integer' name='[redeem_count]' role='measure' type='quantitative' />
+            <column datatype='date' name='[reg_date]' role='dimension' type='ordinal' />
+            <column-instance column='[redeem_count]' derivation='Sum' name='[sum:redeem_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[offer_Redeem_date]' derivation='Month-Trunc' name='[tmn:offer_Redeem_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[reg_date]' derivation='Month-Trunc' name='[tmn:reg_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1vgyk6u1p1swjz111ji220asi1wb].[my:offer_Redeem_date:ok]'>
+            <groupfilter from='201704' function='range' level='[my:offer_Redeem_date:ok]' to='201803' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1vgyk6u1p1swjz111ji220asi1wb].[my:reg_date:ok]'>
+            <groupfilter from='201704' function='range' level='[my:reg_date:ok]' to='201801' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1vgyk6u1p1swjz111ji220asi1wb].[none:description:nk]'>
+            <groupfilter function='member' level='[none:description:nk]' member='&quot;Save Mart&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1vgyk6u1p1swjz111ji220asi1wb].[none:description:nk]</column>
+            <column>[federated.1vgyk6u1p1swjz111ji220asi1wb].[my:reg_date:ok]</column>
+            <column>[federated.1vgyk6u1p1swjz111ji220asi1wb].[my:offer_Redeem_date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1vgyk6u1p1swjz111ji220asi1wb].[tmn:offer_Redeem_date:ok]' value='54' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='in-tooltip' field='[federated.1vgyk6u1p1swjz111ji220asi1wb].[sum:redeem_count:qk]' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1vgyk6u1p1swjz111ji220asi1wb].[tmn:reg_date:ok]' value='Activation Month'>
+              <formatted-text>
+                <run>Activation Month</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1vgyk6u1p1swjz111ji220asi1wb].[my:reg_date:ok]' value='Activation Month'>
+              <formatted-text>
+                <run>Activation Month</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1vgyk6u1p1swjz111ji220asi1wb].[my:offer_Redeem_date:ok]' value='Redeemption Month'>
+              <formatted-text>
+                <run>Redeemption Month</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1vgyk6u1p1swjz111ji220asi1wb].[none:description:nk]' value='Retailer Description'>
+              <formatted-text>
+                <run>Retailer Description</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1vgyk6u1p1swjz111ji220asi1wb].[tmn:reg_date:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vgyk6u1p1swjz111ji220asi1wb].[sum:redeem_count:qk]</rows>
+        <cols>[federated.1vgyk6u1p1swjz111ji220asi1wb].[tmn:offer_Redeem_date:ok]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='consumer_incentive_final' name='federated.1vgyk6u1p1swjz111ji220asi1wb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1vgyk6u1p1swjz111ji220asi1wb'>
+        <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+        <column-instance column='[offer_Redeem_date]' derivation='MY' name='[my:offer_Redeem_date:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[reg_date]' derivation='MY' name='[my:reg_date:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[description]' derivation='None' name='[none:description:nk]' pivot='key' type='nominal' />
+        <column datatype='date' name='[offer_Redeem_date]' role='dimension' type='ordinal' />
+        <column datatype='date' name='[reg_date]' role='dimension' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='5' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='3' type='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='98000' id='1' name='Stacked Chart' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='4' is-fixed='true' param='vert' type='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='6500' id='6' mode='checkdropdown' name='Stacked Chart' param='[federated.1vgyk6u1p1swjz111ji220asi1wb].[my:reg_date:ok]' show-search='false' type='filter' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='7' mode='checkdropdown' name='Stacked Chart' param='[federated.1vgyk6u1p1swjz111ji220asi1wb].[my:offer_Redeem_date:ok]' type='filter' w='16000' x='83200' y='7500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8750' id='8' name='Stacked Chart' param='[federated.1vgyk6u1p1swjz111ji220asi1wb].[none:description:nk]' type='filter' w='16000' x='83200' y='14000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='28250' id='9' name='Stacked Chart' pane-specification-id='0' param='[federated.1vgyk6u1p1swjz111ji220asi1wb].[tmn:reg_date:ok]' type='color' w='16000' x='83200' y='22750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Stacked Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1vgyk6u1p1swjz111ji220asi1wb].[my:reg_date:ok]' show-search='false' type='filter' />
+            <card mode='checkdropdown' param='[federated.1vgyk6u1p1swjz111ji220asi1wb].[my:offer_Redeem_date:ok]' type='filter' />
+            <card param='[federated.1vgyk6u1p1swjz111ji220asi1wb].[none:description:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1vgyk6u1p1swjz111ji220asi1wb].[tmn:reg_date:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vgyk6u1p1swjz111ji220asi1wb].[mn:reg_date:ok]</field>
+            <field>[federated.1vgyk6u1p1swjz111ji220asi1wb].[my:offer_Redeem_date:ok]</field>
+            <field>[federated.1vgyk6u1p1swjz111ji220asi1wb].[my:reg_date:ok]</field>
+            <field>[federated.1vgyk6u1p1swjz111ji220asi1wb].[none:consumer_id_id:ok]</field>
+            <field>[federated.1vgyk6u1p1swjz111ji220asi1wb].[none:description:nk]</field>
+            <field>[federated.1vgyk6u1p1swjz111ji220asi1wb].[tmn:offer_Redeem_date:qk]</field>
+            <field>[federated.1vgyk6u1p1swjz111ji220asi1wb].[tmn:redeem_date:ok]</field>
+            <field>[federated.1vgyk6u1p1swjz111ji220asi1wb].[tmn:redeem_date:qk]</field>
+            <field>[federated.1vgyk6u1p1swjz111ji220asi1wb].[tmn:reg_date:ok]</field>
+            <field>[federated.1vgyk6u1p1swjz111ji220asi1wb].[tmn:reg_date:qk]</field>
+            <field>[federated.1vgyk6u1p1swjz111ji220asi1wb].[yr:offer_Redeem_date:ok]</field>
+            <field>[federated.1vgyk6u1p1swjz111ji220asi1wb].[yr:reg_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4769D95F-CE8D-4E9D-8D8F-C7EFADD6766D}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Stacked Chart'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1vgyk6u1p1swjz111ji220asi1wb].[tmn:reg_date:ok]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='1' />
+      <simple-id uuid='{5149C2A4-6D28-41E0-9DBC-5345DD0B0C2D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      M7PPN9H+P5z61lA3pETQAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Stacked Chart' width='192'>
+      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
+      QNpCP8swdOSCjCDZsNukdXtIOOw2DEND0wzsNglZltENAwQRp8O+hQkjA13TkBUVm92BJK4v
+      eCFKdmySiK6pGIKETYRCQcYABNGG07GVW26gqQqKquNwOhEMnYKsfHEvBDRVQZAcCMZt98Lm
+      wH7fLYOBpqooqobd4URER5YVbA4HkiCgqgqCZEf4Yv+6PTt229d1UTcuU7Kv38+dJ4BCkgsX
+      ryHLBQJ1e/Cmp5heyeCraqO7SuBGfz+lh75DHVGu9k+QXolQevCbHGspfmVIeTXC2atjqHmV
+      PccOMXv1EllVp677aXz5eUZmlzh64iWy8yOMzK4QX17iyMv/jIZQ8U304tQgN6Zj5DLwzHPd
+      XDl7hQJ2jp06zuLwANGcwCsnDjBx4zqLa2lmYzl++IffpGiHWcNgpO8iC4kcOMrpqrdxfTSK
+      iosXTuxl+NJ5CpX7Od7q4+qlq2RyadK2Cr7z4haSJcppLl26Si6fx1vdSUieY2I5jaesiZ56
+      J8PXe/Ed+EOabUtcuT5KJhEl0P0Sz3Tcp/OjmqX3Qi/pQgFXeTNVLDG6kMQVDHOo2UffYD8l
+      Tc/TEkzR2ztENrmIrekUL+z7mtykSo6rV66QyuRxlrdSKy4yFE3hLKnlcGtwB84DSE7qGxrw
+      u0QURSOtOzh18hhr85NUteyl1iOzaquitqyEhsYwubxOd0cjti38OksuP03hOgRdwW2kyPg7
+      eeZgO3Mz03Tt3YekpnGVVFFeUUm4tpyC5qSjuXpLAXneYAXhmgryuRwuMYM7/BQ95QJR2UF3
+      RyuZVJyqqlrKq+uo8os4g41Ul/m2ZKOsup6qUh/5gk4mn+HAkWcokxdJh1rprPaSKNioKgtR
+      H27AKxYoq+8k6N2CP47ooC4cJuiVKMiQUuHUyeNkFqYobeqmwacQE6uoK/PT0NiALKt0tjXj
+      +NoWwCAxP8G5C73kJR9qIsrY5Bi6I0jA66Em3EDIa6cgq6QKAidPPUMmNkWovotwqchawU9N
+      ZYhwUyOFnELXnlacX9f6izZq6sKE/HZkVWItm+fZUydQlmfwhrt24DCoYDA3NsSq5qWjuepr
+      w0Dz8QhGydYnkAxNZnxoCHdlPRUlnq9ZdsggMTdFSV3Tli+UnFlleGyKxq493JEB5643Lp3p
+      uTgN9aVbi3gVILk8x9RCirbOZiTufakMXWZ2RaW+wn2PI+5lw2B+YoRY3k1Xa83XHlpYXUB1
+      V+BxbtaEyfRdukZWkZmamiG5skyocQ+1ZV4QYHFqmIWsRFd7/decESjJRfLOUrybNZmCweL0
+      OEtpic62ui93IrDuMbrjWgBtbY4PLo4gqDkKohd7KkLf8DiGt5oSY5Xeq9eZjuWoqixlfmaG
+      uuZm3FsUwNrMdT4fWUHLruEoq2N5+DKTMzME69rJRce4PjjEUhbC1UFGJqJ0tTVseZj1xuVP
+      iSZVkvEEpbW1jFy5wFQsTVtrPRPXrnFjdAzF5idky7IkuwlXhra0/Jeha3x2+kMKusBaWqbC
+      K9DbN0Q0JdAZ9nL9/GVG5xZwBcoRE1MoZW1U+Lbmjamlonx0fhC0PDnDhTu3yLWhMRRnBaVS
+      it7ea0wsZaisLGNpdprKxmY8m/bhBFKryyiim/LKKlwCVDeH11O352O8f+Y6gi6T1hz41RhX
+      B0eRbWVUOHNc6b3G1PwaZZXlLEemqWxowbuJ4PTsCh9/fhVdk0mrEiV6gis3xsmKQarchZ03
+      CmToKplsDsMAm8OF0wbZnIzL7QZNJldQQBBwuz2ga0g2+5bXjdNUmWyuwHp6RA+iLpNXDDwe
+      F0o+h6xqIEr4PC5UVcdu3/qrklzIUZBVQMTj9aAWcmiCDbfTRi6TRTMMRJsDt8OGjoBti/Gu
+      hmFQyGVQNANRsuN2O8hns0gOF3YRstn1zNl2pxu7YCDY7FsWsaFrZLNZ9Jv3QiCXK+B0u0FT
+      yBVkQMDl8SBs4V7oqkI2n8dmd2GXBESbbf23XtfIZHPohoFkd+Kyi+RyeRxuD6KukM1/Yc/t
+      QTCKs2foGrlcDk1fL9PtEMlm8zhcHkRD4f8HK0FlYaZzThIAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
